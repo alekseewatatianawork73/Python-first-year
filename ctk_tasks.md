@@ -2,16 +2,16 @@
 
 ---------------------------------------------------------------------------------------------------------------
 
-# Теория: 
+## Теория: 
 https://github.com/alekseewatatianawork73/Python-first-year/blob/main/ctk_start_lesson.md
 
-# Презентация:
+## Презентация:
 https://docs.google.com/presentation/d/1nVnyEUqA3N8RGUu2P5XaiJnjjejAIe3ZIVpCSKDkFXI/edit?slide=id.g33a0f6b20de_0_41#slide=id.g33a0f6b20de_0_41
 
-# Пример приложения для изменения регистра строк:
+## Пример приложения для изменения регистра строк:
 https://github.com/alekseewatatianawork73/Python-first-year/blob/main/ctk_str.py
 
-# Пример приложения для возведения чисел в квадрат (простейший калькулятор):
+## Пример приложения для возведения чисел в квадрат (простейший калькулятор):
 https://github.com/alekseewatatianawork73/python/blob/main/start_ctk.py
 
 ---------------------------------------------------------------------------------------------------------------
