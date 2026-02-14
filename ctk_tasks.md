@@ -6,6 +6,7 @@
 
 Пример интерфейса программы:
 
-<img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/d9546959-2c77-4fe7-9a6c-a346f2dbae9c" />
+<img width="750" height="430" alt="image" src="https://github.com/user-attachments/assets/8cc203a4-0461-46fe-924f-8639d999aca0" />
+
 
 ---------------------------------------------------------------------------------------------------------------
