@@ -14,6 +14,9 @@ https://github.com/alekseewatatianawork73/Python-first-year/blob/main/ctk_str.py
 ## Пример приложения для возведения чисел в квадрат (простейший калькулятор):
 https://github.com/alekseewatatianawork73/python/blob/main/start_ctk.py
 
+## Доступные значения цветов для customtkinter:
+https://letpy.com/handbook/tkinter-colors/
+
 ---------------------------------------------------------------------------------------------------------------
 
 ## Задание 1. Подсчёт площади прямоугольника
