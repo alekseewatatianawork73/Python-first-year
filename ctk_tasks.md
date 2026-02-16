@@ -55,7 +55,7 @@ https://letpy.com/handbook/tkinter-colors/
 
 Пример интерфейса программы в синем оформлении:
 
-<img width="1006" height="536" alt="image" src="https://github.com/user-attachments/assets/a1094dfa-be2a-4d91-9294-c10e96f9720d" />
+<img width="750" height="430" alt="image" src="https://github.com/user-attachments/assets/a1094dfa-be2a-4d91-9294-c10e96f9720d" />
 
 
 ---------------------------------------------------------------------------------------------------------------
