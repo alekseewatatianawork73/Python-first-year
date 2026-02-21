@@ -210,7 +210,7 @@ def menu_func(choice):
 root = ctk.CTk()
 
 option_menu = ctk.CTkOptionMenu(master=root)
-option_menu.configure(values=["Красный", "Зеленый", "Синий"], command=menu_func)  # функция menu_func получит выбранное в списке значение значение
+option_menu.configure(values=["Красный", "Зеленый", "Синий"], command=menu_func)  # функция menu_func получит выбранное в списке значение
 option_menu.grid(row=0, column=0, padx=10, pady=10, sticky='ew')
 
 root.mainloop()
@@ -226,7 +226,7 @@ def cmb_func(choice):
 root = ctk.CTk()
 
 cmb = ctk.CTkOptionMenu(master=root)
-cmb.configure(values=["Красный", "Зеленый", "Синий"], command=cmb_func)  # функция cmb_func получит выбранное в списке значение значение
+cmb.configure(values=["Красный", "Зеленый", "Синий"], command=cmb_func)  # функция cmb_func получит выбранное в списке значение
 cmb.grid(row=0, column=0, padx=10, pady=10, sticky='ew')
 
 root.mainloop()
