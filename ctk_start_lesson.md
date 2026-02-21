@@ -232,6 +232,6 @@ cmb.grid(row=0, column=0, padx=10, pady=10, sticky='ew')
 root.mainloop()
 ```
 --------------------------------------------------------------------------------
-Программа для сравнения классов **CTkComboBox** и **CTkOptionMenu**:
+Программа для сравнения классов **CTkComboBox** и **CTkOptionMenu**: https://github.com/alekseewatatianawork73/Python-first-year/blob/main/ctk_optionmenu_combobox.py 
 
 --------------------------------------------------------------------------------
