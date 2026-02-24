@@ -102,10 +102,10 @@ https://letpy.com/handbook/tkinter-colors/
 
 Пример интерфейса программы:
 
-<img width="1001" height="534" alt="image" src="https://github.com/user-attachments/assets/5c7713ab-7fd9-4723-8ad7-2bff91432da7" />
+<img width="750" height="430" alt="image" src="https://github.com/user-attachments/assets/5c7713ab-7fd9-4723-8ad7-2bff91432da7" />
 
-<img width="1003" height="533" alt="image" src="https://github.com/user-attachments/assets/0dc23fbf-8594-4602-b65a-b4e7d3cea6b7" />
+<img width="750" height="430" alt="image" src="https://github.com/user-attachments/assets/0dc23fbf-8594-4602-b65a-b4e7d3cea6b7" />
 
-<img width="1005" height="531" alt="image" src="https://github.com/user-attachments/assets/27d3f5c4-90ff-4db3-9933-5767624c8dcc" />
+<img width="750" height="430" alt="image" src="https://github.com/user-attachments/assets/27d3f5c4-90ff-4db3-9933-5767624c8dcc" />
 
 ---------------------------------------------------------------------------------------------------------------
