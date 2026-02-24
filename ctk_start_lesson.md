@@ -235,3 +235,6 @@ root.mainloop()
 Программа для сравнения классов **CTkComboBox** и **CTkOptionMenu**: https://github.com/alekseewatatianawork73/Python-first-year/blob/main/ctk_optionmenu_combobox.py 
 
 --------------------------------------------------------------------------------
+## Изменение и удаление виджетов
+
+--------------------------------------------------------------------------------
