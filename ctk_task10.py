@@ -40,11 +40,9 @@ def remove_tasks():
 
 def light():
     ctk.set_appearance_mode("light")
-    rad_dark.deselect()
 
 
 def dark():
-    rad_light.deselect()
     ctk.set_appearance_mode("dark")
 
 
@@ -71,11 +69,13 @@ lbl_max.configure(text='Добавлено максимальное количе
 lbl_count= ctk.CTkLabel(master=root)
 lbl_count.configure(text=f'Сделано 0 задач!')
 
-rad_light = ctk.CTkRadioButton(master=root)
-rad_light.configure(text='Светлый фон', font=my_font, command=light)
+rad_var = ctk.IntVar(value=1)
 
-rad_dark = ctk.CTkRadioButton(master=root)
-rad_dark.configure(text='Тёмный фон', font=my_font, command=dark)
+rad_light = ctk.CTkRadioButton(master=root, value=1)
+rad_light.configure(text='Светлый фон', font=my_font, command=light, variable=rad_var)
+
+rad_dark = ctk.CTkRadioButton(master=root, value=2)
+rad_dark.configure(text='Тёмный фон', font=my_font, command=dark, variable=rad_var)
 
 entr_task = ctk.CTkEntry(master=root)
 entr_task.configure(placeholder_text='Введите задачу', justify="center", state="normal", font=my_font)
