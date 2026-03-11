@@ -75,10 +75,10 @@ lbl_check = ctk.CTkLabel(master=root)
 lbl_check.configure(text='Выбрано 0 чекбоксов')
 
 lbl_radio = ctk.CTkLabel(master=root)
-lbl_radio.configure(text='Выбрано радиокнопка 1')
+lbl_radio.configure(text='Выбрана радиокнопка ...')
 
-# начальное выбранное значение среди радиокнопок: пусть будет 1
-radio_var = ctk.IntVar(value=1)
+# начальное выбранное значение среди радиокнопок: пусть будет 0
+radio_var = ctk.IntVar(value=0)
 
 # размещаем элементы в окне
 lbl_check.grid(row=1, column=2, padx=10, pady=10)
