@@ -509,10 +509,7 @@ import customtkinter as ctk
 
 ...
 
-frm = ctk.CTkFrame(master=root, width=300, height=300)
-frm.configure(fg_color='lightblue', border_color='darkblue', border_width=3, corner_radius=0)
-frm.grid_propagate(False)
-frm.grid(row=0, column=3, padx=10, pady=10)
+
 
 ...
 
