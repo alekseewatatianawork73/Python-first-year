@@ -37,7 +37,7 @@ https://letpy.com/handbook/tkinter-colors/
 
 Пример интерфейса программы:
 
-<img width="750" height="430" alt="image" src="https://github.com/alekseewatatianawork73/Python-first-year/blob/main/images/image.PNG" />
+<img width="750" height="430" alt="image" src="https://github.com/alekseewatatianawork73/Python-first-year/blob/main/images/image.png" />
 
 
 ---------------------------------------------------------------------------------------------------------------
