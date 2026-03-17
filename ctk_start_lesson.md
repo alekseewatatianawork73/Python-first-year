@@ -503,13 +503,20 @@ root.mainloop()
 
 и другие.
 
-Пример создания дополнительного окна поверх главного:
+Пример создания дополнительного окна с фоном цвета "lightcyan" с размерами 700х500 (размер окна менять нельзя), расположенного поверх главного окна:
 ```
 import customtkinter as ctk
 
+root = CTk()
+
 ...
 
-
+window = ctk.CTkToplevel(master=root)
+window.title('Моё окно')
+window.geometry('700x500')
+window.resizable(False, False)
+window.configure(fg_color='lightcyan')
+window.attributes('-topmost', True) 
 
 ...
 
