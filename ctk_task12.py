@@ -34,7 +34,8 @@ def save():
 
 
 def cancel():
-    pass
+    global window
+    window.destroy()
 
 
 def settings():
