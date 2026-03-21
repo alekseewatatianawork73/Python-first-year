@@ -35,7 +35,7 @@ my_font = ctk.CTkFont(family='Times New Roman', size=25, weight='bold')
 font_fig = ctk.CTkFont(size=70)
 
 lbl_start = ctk.CTkLabel(master=root)
-lbl_start.configure(text='Круг или квадрат', font=my_font)
+lbl_start.configure(text='Выбор фигуры', font=my_font)
 
 frm_choice = ctk.CTkFrame(master=root, width=400, height=500)
 frm_choice.configure(border_width=3, corner_radius=30)
