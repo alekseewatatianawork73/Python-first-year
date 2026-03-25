@@ -5,8 +5,8 @@
 ### Теория: 
 https://github.com/alekseewatatianawork73/Python-first-year/blob/main/ctk_start_lesson.md
 
-### Презентация:
-https://docs.google.com/presentation/d/1nVnyEUqA3N8RGUu2P5XaiJnjjejAIe3ZIVpCSKDkFXI/edit?slide=id.g33a0f6b20de_0_41#slide=id.g33a0f6b20de_0_41
+### Задачи по Customtkinter (часть 1):
+https://github.com/alekseewatatianawork73/Python-first-year/blob/main/ctk_tasks.md
 
 ### Доступные значения цветов для customtkinter:
 https://letpy.com/handbook/tkinter-colors/
@@ -100,3 +100,23 @@ https://letpy.com/handbook/tkinter-colors/
 <img width="705" height="430" alt="image" src="https://github.com/user-attachments/assets/11ad99a5-11e6-4c47-92bb-ceb9d7e848b3" />
 
 ---------------------------------------------------------------------------------------------------------------
+
+## Задание 4. Панель управления устройствами
+
+Создайте главное окно с заголовком «Управление устройствами». Разместите три переключателя (CTkSwitch) для управления:
+
+- «Подсветка»
+- «Wi-Fi»
+- «Bluetooth»
+
+Внизу окна добавьте общую надпись, которая показывает, сколько устройств включено (например, «Активно: 2 из 3»)
+
+Пример интерфейса программы:
+
+<img width="705" height="430" alt="image" src="https://github.com/user-attachments/assets/b29e8c36-4f99-4cc5-b57c-415e72479fad" />
+
+<img width="705" height="430" alt="image" src="https://github.com/user-attachments/assets/aa80ed03-eb27-49ee-8528-f9ee22acffb5" />
+
+---------------------------------------------------------------------------------------------------------------
+
+## Задание 5.
