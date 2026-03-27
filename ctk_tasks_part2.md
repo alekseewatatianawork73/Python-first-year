@@ -184,6 +184,8 @@ frm.configure(fg_color=f'#{r:02x}{g:02x}{b:02x}')
 
 Пример интерфейса программы:
 
+<img width="705" height="430" alt="image" src="https://github.com/user-attachments/assets/232deacd-ea03-4ebf-ad2d-e9868daae832" />
 
+<img width="705" height="430" alt="image" src="https://github.com/user-attachments/assets/d1ef7b52-39db-4241-a67c-9c112e0c7f1f" />
 
 ---------------------------------------------------------------------------------------------------------------
