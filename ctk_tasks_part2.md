@@ -137,11 +137,11 @@ frm.configure(fg_color=f'#{r:02x}{g:02x}{b:02x}')
 
 Пример интерфейса программы:
 
-<img width="1206" height="730" alt="image" src="https://github.com/user-attachments/assets/6af50cb5-034a-40a6-9ceb-d32a5d2c47a4" />
+<img width="705" height="430" alt="image" src="https://github.com/user-attachments/assets/6af50cb5-034a-40a6-9ceb-d32a5d2c47a4" />
 
-<img width="1204" height="733" alt="image" src="https://github.com/user-attachments/assets/e77d8398-2856-43bd-9eee-84e2d2233429" />
+<img width="705" height="430" alt="image" src="https://github.com/user-attachments/assets/e77d8398-2856-43bd-9eee-84e2d2233429" />
 
-<img width="1205" height="731" alt="image" src="https://github.com/user-attachments/assets/5fe20985-c890-4428-99f2-bfe2d9a71ec2" />
+<img width="705" height="430" alt="image" src="https://github.com/user-attachments/assets/5fe20985-c890-4428-99f2-bfe2d9a71ec2" />
 
 
 ---------------------------------------------------------------------------------------------------------------
