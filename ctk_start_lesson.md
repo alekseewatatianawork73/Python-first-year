@@ -700,4 +700,34 @@ update_timer()
 root.mainloop()
 ```
 
+Отменить повторяющиеся действия можно при помощи метода **after_cancel()**. Простейший пример:
+```
+import customtkinter as ctk
+
+def say_hello():
+    global after_id
+    # выводим "Привет!" каждую секунду
+    print("Привет!")
+    after_id = root.after(1000, say_hello)
+
+def stop():
+    root.after_cancel(after_id)  # отменяем вывод
+    print("Остановлено!")
+
+
+root = ctk.CTk()
+
+after_id = None  # переменная для повтора действий
+
+btn_start = ctk.CTkButton(master=root)
+btn_start.configure(text="Старт", command=say_hello)
+btn_start.grid(row=0, column=0)
+
+btn_stop = ctk.CTkButton(master=root)
+btn_stop.configure(text="Стоп", command=stop)
+btn_stop.grid(row=1, column=0)
+
+root.mainloop()
+```
+
 --------------------------------------------------------------------------------
