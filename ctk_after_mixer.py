@@ -1,4 +1,5 @@
 # Теория: метод after(), добавление звука в приложение
+# Ссылка на файлы со звуками: https://drive.google.com/drive/folders/1URFPfih-PYEEh1sfTC3NKPZ6xdH6cdnt?usp=sharing
 import customtkinter as ctk
 from pygame import mixer  # используем модуль mixer из библиотеки pygame для подключения звука
 mixer.init()  # при использовании pygame нужно обязательно инициализировать (подключать) нужные модули (здесь mixer)
