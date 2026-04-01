@@ -58,7 +58,17 @@ def press4():
 # функция для кнопки "Немигающая надпись"
 def press5():
     global after_id
-    root.after_cancel(after_id)  # отменяем повторяющиеся мигания
+    if after_id:
+        root.after_cancel(after_id)  # отменяем повторяющиеся мигания
+
+
+# функция для кнопки "Играет ли музыка?"
+def press6():
+    # проверяем, играет ли музыка, при помощи метода get_busy()
+    if mixer.music.get_busy():
+        lbl6.configure(text='Музыка играет')
+    else:
+        lbl6.configure(text='Музыка выключена')
 
 
 # основная программа
@@ -98,6 +108,12 @@ btn4.configure(text="Мигающая надпись", font=my_font, command=pre
 btn5 = ctk.CTkButton(master=root)
 btn5.configure(text="Немигающая надпись", font=my_font, command=press5)
 
+btn6 = ctk.CTkButton(master=root)
+btn6.configure(text="Играет ли музыка?", font=my_font, command=press6)
+
+lbl6 = ctk.CTkLabel(master=root)
+lbl6.configure(text=f'...', font=my_font)
+
 # размещение элементов в окне
 lbl.grid(row=1, column=3, padx=10, pady=10, sticky='nsew')
 btn1.grid(row=2, column=3, padx=20, pady=20, sticky="nsew")
@@ -105,6 +121,8 @@ btn2.grid(row=3, column=2, padx=20, pady=20, sticky="nsew")
 btn3.grid(row=3, column=4, padx=20, pady=20, sticky="nsew")
 btn4.grid(row=2, column=2, padx=20, pady=20, sticky="nsew")
 btn5.grid(row=2, column=4, padx=20, pady=20, sticky="nsew")
+btn6.grid(row=4, column=2, padx=20, pady=20, sticky="nsew")
+lbl6.grid(row=4, column=4, padx=20, pady=20, sticky="nsew")
 
 # бесконечный цикл для отображения окна приложения
 root.mainloop()
