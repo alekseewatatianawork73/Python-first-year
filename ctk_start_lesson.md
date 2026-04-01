@@ -650,10 +650,15 @@ window.after(time, function)
 import customtkinter as ctk
 
 def say_hello():
-    print("Привет через 2 секунды!")
+    lbl = ctk.CTkLabel(master=root)
+    lbl.configure(text=f'Привет через 2 секунды!', font=my_font)
+    lbl.grid(row=0, column=0)
 
 
-root = CTk()
+root = ctk.CTk()
+root.geometry("1000x500")
+
+my_font = ctk.CTkFont(family='Arial', size=20, weight='bold')
 
 # Через 2000 миллисекунд (2 секунды) вызвать функцию say_hello
 root.after(2000, say_hello)
