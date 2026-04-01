@@ -885,7 +885,8 @@ root = ctk.CTk()
 root.geometry("300x200")
 
 # кнопка для включения/выключения музыки
-btn = ctk.CTkButton(root, text="Выключить музыку", command=toggle_music)
+btn = ctk.CTkButton(master=root)
+btn.configure(text="Выключить музыку", command=toggle_music)
 btn.grid(row=0, column=0)
 
 root.mainloop()
