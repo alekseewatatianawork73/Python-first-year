@@ -690,6 +690,7 @@ def update_timer():
     # если секунды закончились, то выводим надпись "Время вышло!"
     else:
         timer_label.configure(text="Время вышло!")
+        seconds = 10
 
 root = ctk.CTk()
 root.geometry("300x200")
