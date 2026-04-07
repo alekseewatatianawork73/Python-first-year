@@ -1092,10 +1092,41 @@ root.mainloop()
 |"3.0"|Начало третьей строки|
 
 
-**Пример:**
+**Пример создания текстового поля и использования методов:**
 ```
+import customtkinter as ctk
 
+
+def show():
+    my_text = txt.get('0.0', 'end')  # получаем весь текст из текстового поля
+    print(my_text)  # выводим этот текст в консоль
+    txt.delete('0.0', 'end')  # очищаем текстовое поле
+
+
+root = ctk.CTk()
+root.geometry("1000x700")
+
+rows, columns = 7, 7
+for i in range(rows):
+    root.rowconfigure(index=i, weight=1)
+for i in range(columns):
+    root.columnconfigure(index=i, weight=1)
+
+my_font = ctk.CTkFont(family='Courier', size=25, weight='bold')
+
+lbl = ctk.CTkLabel(master=root)
+lbl.configure(text="Текстовое поле:", font=my_font)
+lbl.grid(row=0, column=3, padx=10, pady=10)
+
+txt = ctk.CTkTextbox(master=root)
+txt.configure(font=my_font, wrap='word', width=500, height=200, state='normal', border_width=3, border_color='black')
+txt.grid(row=1, column=3, padx=10, pady=10)
+
+btn = ctk.CTkButton(master=root)
+btn.configure(text="Вывести текст", font=my_font, command=show)
+btn.grid(row=2, column=3, padx=10, pady=10)
+
+root.mainloop()
 ```
-
 
 --------------------------------------------------------------------------------
