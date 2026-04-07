@@ -903,6 +903,141 @@ root.mainloop()
 
  --------------------------------------------------------------------------------
 
+## Класс CTkTabview() — вкладки в приложении
+
+**CTkTabview** — это виджет, который позволяет создавать вкладки (tabs) для организации интерфейса приложения. Представьте себе папку с разделителями: нажимая на разные вкладки, вы видите разное содержимое, но при этом всё находится в одном окне.
+
+Вкладки — это отличный способ разбить интерфейс на логические блоки, не загромождая окно. Вместо того, чтобы размещать все элементы на одном огромном экране, вы можете спрятать их в разных вкладках.
+
+Когда использовать вкладки:
+
+- Приложение с несколькими разделами (настройки, статистика, профиль)
+- Группировка похожих функций (редактирование, просмотр, экспорт)
+- Экономия места на экране
+
+Главная особенность: каждая вкладка — как отдельный фрейм, на котором можно размещать любые виджеты . При переключении между вкладками фреймы просто сменяют друг друга.
+
+**Простой пример:**
+```
+import customtkinter as ctk
+
+root = ctk.CTk()
+root.geometry("1000x700")
+
+# Создаём панель вкладок
+tabview = ctk.CTkTabview(master=root)
+tabview.configure(width=500, height=400)
+tabview.grid(row=0, column=0)
+
+# Добавляем вкладки на панель
+tabview.add("Главная")
+tabview.add("Настройки")
+tabview.add("О программе")
+
+# Получаем фрейм вкладки "Главная" и создаём внутри неё надпись lbl
+frame_main = tabview.tab("Главная")
+lbl = ctk.CTkLabel(master=frame_main)
+lbl.configure(text="Добро пожаловать!")
+lbl.grid(row=0, column=0)
+
+# Получаем фрейм вкладки "Настройки" и создаём внутри неё переключатель "Тёмная тема"
+frame_settings = tabview.tab("Настройки")
+sw = ctk.CTkSwitch(master=frame_settings)
+sw.configure(text="Тёмная тема")
+sw.grid(row=0, column=0)
+
+root.mainloop()
+```
+
+Основные параметры панели вкладок **CTkTabview**:
+
+- **width** - ширина виджета в пикселях;
+- **height** - высота виджета в пикселях;
+- **corner_radius** - радиус скругления углов: от 0 до 180 (0 - квадратные углы, 10 - немного скругленные, 50 - сильно скглугленные, 180 - получите круглый фрейм);
+- **fg_color** - цвет фона основной области;
+- **segmented_button_fg_color** - цвет фона панели с кнопками вкладок;
+- **segmented_button_selected_color** - цвет выбранной вкладки;
+- **segmented_button_selected_hover_color** - цвет выбранной вкладки при наведении;
+- **segmented_button_unselected_color** - цвет невыбранной вкладки;
+- **segmented_button_unselected_hover_color** - цвет невыбранной вкладки при наведении;
+- **state** - состояние панели вкладок (_normal_ - нормальное, вкладки можно пеключать; _disabled_ - заблокированное, вкладки нельзя пеключать);
+- **text_color** - цвет текста на кнопках вкладок;
+- **command** - функция, вызываемая при переключении вкладки.
+
+Основные методы **CTkTabview** для работы со вкладками:
+
+- **.add(name)** - добавляет на панель новую вкладку с указанным именем name;
+- **.tab(name)** - возвращает фрейм указанной вкладки для размещения виджетов (пример: _frame = tabview.tab("Главная")_);
+- **.set(name)** - делает вкладку с именем name активной (переключает на неё);
+- **.get()** - возвращает имя активной (выбранной) вкладки (пример: _current = tabview.get()_);
+- **.delete(name)** - удаляет вкладку с именем name;
+- **._segmented_button.configure(font=my_font)** - задаёт шрифт my_font названиям вкладок;
+- **.grid_propagate(False)** - запрещает фрейму вкладок изменять размер (если не использовать, размеры фрейма будут подстраиваться под количество и размеры элементов внутри него).
+
+**Пример использования методов и параметров:**
+```
+import customtkinter as ctk
+
+# функция, которая вызывается при переключении вкладки
+def on_tab_change():
+    current_tab = tabview.get()
+    print(f"Выбрана вкладка: {current_tab}")
+
+
+root = ctk.CTk()
+root.geometry("1000x700")
+
+my_font = ctk.CTkFont(family='Courier', size=25, weight='bold')
+
+# Создаём вкладки
+# создаём панель вкладок при помощи класса CTkTabview
+tabview = ctk.CTkTabview(master=root)
+tabview.configure(width=900, height=500, fg_color='aquamarine', border_width=3, border_color='black', segmented_button_selected_color='aquamarine', segmented_button_unselected_color='aquamarine3',
+              text_color='black', segmented_button_selected_hover_color='gray', segmented_button_unselected_hover_color='gray', segmented_button_fg_color='black', command=on_tab_change)
+tabview._segmented_button.configure(font=my_font) # задаём шрифт названиям вкладок
+tabview.grid_propagate(False)  # запрещаем изменяться размерам фрейма вкладок
+
+# Добавляем вкладки
+tabview.add("📁 Файлы")
+tabview.add("⚙️ Настройки")
+tabview.add("ℹ️ О программе")
+
+# --- Вкладка "Файлы" ---
+files_tab = tabview.tab("📁 Файлы")
+
+lbl = ctk.CTkLabel(master=files_tab)
+lbl.configure(text="Список файлов:")
+lbl.grid(row=0, column=0)
+
+btn_open = ctk.CTkButton(master=files_tab)
+btn_open.configure(text="Открыть файл")
+btn_open.grid(row=1, column=0)
+
+# --- Вкладка "Настройки" ---
+settings_tab = tabview.tab("⚙️ Настройки")
+
+lbl2 = ctk.CTkLabel(master=settings_tab)
+lbl2.configure(text="Настройки приложения")
+lbl2.grid(row=0, column=0)
+
+# --- Вкладка "О программе" ---
+about_tab = tabview.tab("ℹ️ О программе")
+
+lbl3 = ctk.CTkLabel(master=about_tab)
+lbl3.configure(text="Информация о программе:")
+lbl3.grid(row=0, column=0)
+
+lbl4 = ctk.CTkLabel(master=about_tab)
+lbl4.configure(text="Версия 1.0. Создано на Python.")
+lbl4.grid(row=1, column=0)
+
+tabview.grid(row=0, column=0)
+
+root.mainloop()
+```
+
+--------------------------------------------------------------------------------
+
 ## Класс CTkTextbox() - создание многострочного текстового поля
 
 **CTkTextbox()** — это ...
