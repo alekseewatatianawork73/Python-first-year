@@ -104,7 +104,7 @@ https://letpy.com/handbook/tkinter-colors/
 
 <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/bff98381-251a-43cd-bd2f-30c69c02c1ed" />
 
-2. При нажатии на кнопку "Показать домик" - зависит от выбора в выпаадающем списке:
+2. При нажатии на кнопку "Показать домик" - зависит от выбора в выпадающем списке:
 
 <img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/413469a1-e5f2-4dee-a5f0-cef6600bb680" />
 
