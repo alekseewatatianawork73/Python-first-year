@@ -20,7 +20,7 @@ def show_house():
 
 
 root = ctk.CTk()
-root.title("Холст для рисования")
+root.title("Домик на холсте")
 root.geometry("1000x700")
 root.configure(fg_color='lightgreen')
 
