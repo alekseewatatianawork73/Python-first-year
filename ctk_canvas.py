@@ -85,7 +85,7 @@ red_pie = pict.create_arc(200, 300, 450, 450, start=0, extent=90, fill='red')
 orange_pie = pict.create_arc(200, 300, 450, 450, start=180, extent=25, fill='orange')
 # рисуем хорду (сегмент) зеленого цвета от 260 градусов (длина - 100 градусов)
 green_chord = pict.create_arc(200, 300, 450, 450, start=260, extent=100, style='chord', fill='green')
-# рисуем дугу синего цвета от 160 градусов (длина - 70 градусов)
+# рисуем дугу синего цвета от 100 градусов (длина - 70 градусов)
 blue_arc = pict.create_arc(200, 300, 450, 450, start=100, extent=70, style='arc', outline='blue', width=5)
 #style: pieslice - сектор, chord - хорда, arc - дуга
 
